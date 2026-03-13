@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prompt Engineering | Discovery</title>
+    <title>Prompt Engineering</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/readme/icon-prompt.svg">
+    <link rel="shortcut icon" href="../assets/readme/icon-prompt.svg">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -149,6 +151,47 @@
             color: var(--secondary);
             margin-bottom: 0.5rem;
             font-size: 1.3rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .content-card {
+                padding: 2.5rem;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            #canvas-container {
+                width: 100% !important;
+                left: 0 !important;
+                right: auto !important;
+                opacity: 0.15 !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+                border-radius: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p,
+            li {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
