@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Large Language Models icon">
+  <rect x="4" y="4" width="88" height="88" rx="20" fill="#6d28d9" />
+  <path d="M20 26 H44 C48 26 50 28 50 32 V70 H26 C22 70 20 68 20 64 Z" fill="#ffffff" />
+  <path d="M76 26 H52 C48 26 46 28 46 32 V70 H70 C74 70 76 68 76 64 Z" fill="#ede9fe" />
+  <path d="M34 38 H42 M34 46 H42 M54 38 H64 M54 46 H64" stroke="#6d28d9" stroke-width="2" stroke-linecap="round" />
+</svg>
