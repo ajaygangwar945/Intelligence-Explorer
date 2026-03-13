@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN & Deep Learning | AI Discovery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --secondary: #6366f1;
+            --bg: #f8fafc;
+            --text: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            background-image: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, transparent 100%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        header {
+            margin-bottom: 4rem;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        .badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .content-card {
+            background: var(--card);
+            border-radius: 2rem;
+            padding: 3.5rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            line-height: 1.8;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: #334155;
+        }
+
+        ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #475569;
+        }
+
+        li::before {
+            content: '●';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 0.8rem;
+            top: 0.2rem;
+        }
+
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 5px solid var(--primary);
+            padding: 2rem;
+            border-radius: 0 1rem 1rem 0;
+            margin: 3rem 0;
+            font-weight: 500;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../dashboard.html" class="back-link">← Back to Dashboard</a>
+        <header>
+            <span class="badge">Vibrant Vision</span>
+            <h1>Convolutional Neural Networks (CNN)</h1>
+            <p style="font-size: 1.3rem; color: var(--muted); animation: fadeIn 1s ease-out 0.4s backwards">
+                Revolutionizing computer vision with deep hierarchical
+                feature extraction.</p>
+        </header>
+
+        <section class="content-card">
+            <h2 style="animation: slideInLeft 0.6s ease-out 0.2s backwards">The Architecture of Vision</h2>
+            <p style="animation: fadeIn 0.8s ease-out 0.4s backwards">Convolutional Neural Networks (CNNs) are
+                specialized deep learning models that excel at spatial pattern
+                recognition. Unlike traditional networks, they leverage the local structure of grid-like data (images,
+                videos).</p>
+
+            <div class="highlight-box" style="animation: fadeIn 1s ease-out 0.6s backwards">
+                CNNs mimic the human visual cortex, processing information through layers of increasing complexity—from
+                simple lines to whole objects.
+            </div>
+
+            <h2 style="animation: slideInLeft 0.6s ease-out 0.6s backwards">Core Building Blocks</h2>
+            <ul>
+                <li style="animation: slideInLeft 0.5s ease-out 0.8s backwards"><strong>Convolutional Layers:</strong>
+                    The heart of the CNN. It uses learnable filters to "scan"
+                    images and detect features like edges, corners, and textures.</li>
+                <li style="animation: slideInLeft 0.5s ease-out 0.9s backwards"><strong>Pooling Layers:</strong> Reduces
+                    spatial dimensions, helping the network become "invariant"
+                    to small shifts or distortions in the input.</li>
+                <li style="animation: slideInLeft 0.5s ease-out 1s backwards"><strong>Activation (ReLU):</strong> Simple
+                    but powerful, it introduces non-linearity, allowing the
+                    network to solve complex, real-world problems.</li>
+                <li style="animation: slideInLeft 0.5s ease-out 1.1s backwards"><strong>Fully Connected Layers:</strong>
+                    These final layers aggregate all the high-level features
+                    extracted to make a final classification decision.</li>
+            </ul>
+
+            <h2 style="animation: slideInLeft 0.6s ease-out 1s backwards">Unrivaled Applications</h2>
+            <p style="animation: fadeIn 0.8s ease-out 1.2s backwards">From the smartphone in your pocket to high-tech
+                medical labs, CNNs are everywhere:</p>
+            <ul>
+                <li style="animation: slideInLeft 0.5s ease-out 1.4s backwards"><strong>Object Detection:</strong>
+                    Identifying and locating multiple objects within a single frame.
+                </li>
+                <li style="animation: slideInLeft 0.5s ease-out 1.5s backwards"><strong>Facial Recognition:</strong>
+                    Powering security systems and biometric verification.</li>
+                <li style="animation: slideInLeft 0.5s ease-out 1.6s backwards"><strong>Medical Imaging:</strong>
+                    Assisting doctors in spotting anomalies in X-rays, MRIs, and CT
+                    scans.</li>
+                <li style="animation: slideInLeft 0.5s ease-out 1.7s backwards"><strong>Autonomous Driving:</strong>
+        </section>
+    </div>
+
+    <div id="canvas-container"
+        style="position: fixed; top: 0; right: 0; width: 50%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.4;">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / 2) / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth / 2, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Create a stack of planes representing layers
+        const layerCount = 5;
+        const layers = [];
+        for (let i = 0; i < layerCount; i++) {
+            const geometry = new THREE.PlaneGeometry(3, 3);
+            const material = new THREE.MeshBasicMaterial({
+                color: 0x0ea5e9,
+                side: THREE.DoubleSide,
+                transparent: true,
+                opacity: 0.2,
+                wireframe: true
+            });
+            const plane = new THREE.Mesh(geometry, material);
+            plane.position.z = -i * 1.5;
+            scene.add(plane);
+            layers.push(plane);
+        }
+
+        camera.position.z = 5;
+        camera.position.x = 2;
+        camera.rotation.y = 0.5;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            layers.forEach((l, idx) => {
+                l.rotation.z += 0.005 * (idx + 1) * 0.2;
+                l.position.z = Math.sin(Date.now() * 0.001 + idx) * 0.5 - (idx * 1.5);
+            });
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth / 2, window.innerHeight);
+            camera.aspect = (window.innerWidth / 2) / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
+
+</html>

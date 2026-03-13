@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligence Explorer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="main-title">Intelligence Explorer</h1>
+            <p class="subtitle">A masterclass series on the evolution of Artificial Intelligence. Dive deep into
+                specialized modules through our vibrant research dashboard.</p>
+        </header>
+
+        <div class="grid">
+            <a href="pages/cnn.html" class="topic-card card-delay-1" title="Explore CNN and Deep Learning module">
+                <div class="icon-box color-cnn icon-delay-1">👁️</div>
+                <h2 class="card-title">CNN & Deep Learning</h2>
+                <p class="card-desc">Master the architectures that power computer vision, from simple filters to complex
+                    multi-layer networks.</p>
+                <div class="explore-btn">Explore Module</div>
+            </a>
+
+            <a href="pages/genai.html" class="topic-card card-delay-2" title="Explore Generative AI module">
+                <div class="icon-box color-genai icon-delay-2">🎨</div>
+                <h2 class="card-title">Generative AI</h2>
+                <p class="card-desc">Unlocking creativity with Diffusion models, GANs, and the future of synthetic media
+                    generation.</p>
+                <div class="explore-btn">Explore Module</div>
+            </a>
+
+            <a href="pages/intro.html" class="topic-card card-delay-3" title="Explore AI and ML Foundations module">
+                <div class="icon-box color-intro icon-delay-3">🧠</div>
+                <h2 class="card-title">AI & ML Foundations</h2>
+                <p class="card-desc">The bedrock of intelligence: supervised learning, reinforcement paradigms, and the
+                    ML lifecycle.</p>
+                <div class="explore-btn">Explore Module</div>
+            </a>
+
+            <a href="pages/llm.html" class="topic-card card-delay-4" title="Explore Large Language Models module">
+                <div class="icon-box color-llm icon-delay-4">📚</div>
+                <h2 class="card-title">Large Language Models</h2>
+                <p class="card-desc">The transformer revolution: how GPT, BERT, and Attention changed the way machines
+                    read and write.</p>
+                <div class="explore-btn">Explore Module</div>
+            </a>
+
+            <a href="pages/nlp.html" class="topic-card card-delay-5" title="Explore Natural Language Processing module">
+                <div class="icon-box color-nlp icon-delay-5">💬</div>
+                <h2 class="card-title">Natural Language Processing</h2>
+                <p class="card-desc">Bridge the gap between human linguistics and machine data with NLU and NLG
+                    techniques.</p>
+                <div class="explore-btn">Explore Module</div>
+            </a>
+
+            <a href="pages/prompt.html" class="topic-card card-delay-6" title="Explore Prompt Engineering module">
+                <div class="icon-box color-prompt icon-delay-6">⚡</div>
+                <h2 class="card-title">Prompt Engineering</h2>
+                <p class="card-desc">Optimize the bridge between mind and machine using advanced few-shot and reasoning
+                    strategies.</p>
+                <div class="explore-btn">Explore Module</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const container = document.getElementById('canvas-container');
+        const scene = new THREE.Scene();
+        const camera = new THREE.Camera(); // Main dashboard uses a simple background scene
+
+        // Dashboard Neural Sphere
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        container.appendChild(renderer.domElement);
+
+        const perspectiveCamera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        perspectiveCamera.position.z = 5;
+
+        // Create Sphere Geometry
+        const geometry = new THREE.IcosahedronGeometry(2, 2);
+        const material = new THREE.MeshBasicMaterial({
+            color: 0x6366f1,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.15
+        });
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        // Add nodes
+        const nodesGeometry = new THREE.BufferGeometry();
+        const nodesCount = 100;
+        const posArray = new Float32Array(nodesCount * 3);
+        for (let i = 0; i < nodesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 8;
+        }
+        nodesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+        const nodesMaterial = new THREE.PointsMaterial({ size: 0.05, color: 0x6366f1 });
+        const nodesMesh = new THREE.Points(nodesGeometry, nodesMaterial);
+        scene.add(nodesMesh);
+
+        function animate() {
+            requestAnimationFrame(animate);
+            sphere.rotation.y += 0.002;
+            sphere.rotation.x += 0.001;
+            nodesMesh.rotation.y -= 0.001;
+            renderer.render(scene, perspectiveCamera);
+        }
+
+        window.addEventListener('resize', () => {
+            perspectiveCamera.aspect = window.innerWidth / window.innerHeight;
+            perspectiveCamera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML foundations | Discovery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10b981;
+            --secondary: #059669;
+            --bg: #f0fdf4;
+            --text: #064e3b;
+            --muted: #64748b;
+            --card: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.1), transparent 50%),
+                radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.05), transparent 50%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--secondary);
+        }
+
+        header {
+            margin-bottom: 4rem;
+        }
+
+        .badge {
+            background: var(--bg);
+            color: var(--secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+
+        .content-card {
+            background: var(--card);
+            border-radius: 2rem;
+            padding: 3.5rem;
+            box-shadow: 0 15px 40px rgba(6, 78, 59, 0.05);
+            line-height: 1.8;
+            border: 1px solid rgba(16, 185, 129, 0.1);
+        }
+
+        h2 {
+            color: var(--secondary);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            border-bottom: 2px solid #ecfdf5;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: #374151;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .step-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .step {
+            background: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            text-align: center;
+            border: 1px solid #f3f4f6;
+            animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards;
+        }
+
+        .step-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #d1fae5;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-label {
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .paradigm-card {
+            background: #ecfdf5;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            margin-bottom: 1rem;
+            animation: slideRight 0.6s ease-out backwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="animation: popIn 0.8s ease-out">
+        <a href="../dashboard.html" class="back-link">← Back to Dashboard</a>
+        <header>
+            <span class="badge" style="animation: slideRight 0.6s ease-out">Fundamental Knowledge</span>
+            <h1 style="animation: slideRight 0.6s ease-out 0.1s backwards">AI & Machine Learning Foundations</h1>
+            <p style="font-size: 1.3rem; color: var(--muted); animation: slideRight 0.6s ease-out 0.2s backwards">The
+                science of teaching machines to learn from data
+                without explicit programming.</p>
+        </header>
+
+        <section class="content-card" style="animation: popIn 0.8s 0.3s backwards">
+            <h2 style="animation: slideRight 0.6s ease-out 0.4s backwards">What is AI & ML?</h2>
+            <p style="animation: popIn 0.6s 0.5s backwards">Artificial Intelligence (AI) is the broad science of
+                mimicking human intelligence. Machine Learning (ML)
+                is a sub-discipline where we build algorithms that improve automatically through experience.</p>
+
+            <h2 style="animation: slideRight 0.6s ease-out 0.6s backwards">Major Learning Paradigms</h2>
+
+            <div class="paradigm-card" style="animation-delay: 0.7s">
+                <h3>Supervised Learning</h3>
+                <p>Learning with a teacher. We provide the machine with "labeled" data (input and correct output) until
+                    it can predict results for new inputs.</p>
+            </div>
+
+            <div class="paradigm-card" style="animation-delay: 0.8s">
+                <h3>Unsupervised Learning</h3>
+                <p>Learning by discovery. The machine looks at raw data and finds hidden structures or groupings
+                    (clustering) on its own.</p>
+            </div>
+
+            <div class="paradigm-card" style="animation-delay: 0.9s">
+                <h3>Reinforcement Learning</h3>
+                <p>Learning through trial and error. An agent acts in an environment and receives rewards or penalties
+                    based on its decisions.</p>
+            </div>
+
+            <h2 style="animation: slideRight 0.6s ease-out 1s backwards">The ML Lifecycle</h2>
+            <p style="animation: popIn 0.6s 1.1s backwards">Building an ML model is a systematic journey:</p>
+            <div class="step-grid">
+                <div class="step" style="animation-delay: 1.2s"><span class="step-num">01</span><span
+                        class="step-label">Problem Definition</span>
+                </div>
+                <div class="step" style="animation-delay: 1.3s"><span class="step-num">02</span><span
+                        class="step-label">Data Collection</span></div>
+                <div class="step" style="animation-delay: 1.4s"><span class="step-num">03</span><span
+                        class="step-label">Preprocessing</span></div>
+                <div class="step" style="animation-delay: 1.5s"><span class="step-num">04</span><span
+                        class="step-label">Training</span></div>
+                <div class="step" style="animation-delay: 1.6s"><span class="step-num">05</span><span
+                        class="step-label">Deployment</span></div>
+            </div>
+        </section>
+    </div>
+
+    <div id="canvas-container"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.3;">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Simple linkage graph
+        const group = new THREE.Group();
+        const nodeCount = 12;
+        const nodes = [];
+        for (let i = 0; i < nodeCount; i++) {
+            const geo = new THREE.SphereGeometry(0.1, 16, 16);
+            const mat = new THREE.MeshBasicMaterial({ color: 0x10b981 });
+            const sphere = new THREE.Mesh(geo, mat);
+            sphere.position.set(
+                (Math.random() - 0.5) * 6,
+                (Math.random() - 0.5) * 6,
+                (Math.random() - 0.5) * 6
+            );
+            group.add(sphere);
+            nodes.push(sphere);
+        }
+
+        // Lines between nodes
+        nodes.forEach((n1, idx) => {
+            nodes.forEach((n2, idx2) => {
+                if (idx < idx2 && n1.position.distanceTo(n2.position) < 3) {
+                    const lineGeo = new THREE.BufferGeometry().setFromPoints([n1.position, n2.position]);
+                    const lineMat = new THREE.LineBasicMaterial({ color: 0x10b981, transparent: true, opacity: 0.2 });
+                    const line = new THREE.Line(lineGeo, lineMat);
+                    group.add(line);
+                }
+            });
+        });
+
+        scene.add(group);
+        camera.position.z = 8;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            group.rotation.y += 0.003;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+
+</html>

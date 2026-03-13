@@ -1,0 +1,280 @@
+SFJBS
+ 
+ AIvsMLvsGenerativeAIvsNLPvsDL
+ 
+ Artificial Intelligence(AI):
+● AIinvolvesthedevelopmentofsystemsormachinescapableof
+performingtasksthattypicallyrequirehumanintelligence.
+● Itencompassesvarioustechniquessuchasmachinelearning,natural
+languageprocessing,computervision,androbotics.
+● AIaimstosimulatehuman-likeintelligencetosolvecomplexproblems,
+makedecisions,andinteractwiththeenvironment.
+ MachineLearning(ML):
+● MLisasubsetofAIfocusedondevelopingalgorithmsthatenable
+computerstolearnfrom dataandmakepredictionsordecisionswithout
+beingexplicitlyprogrammed.
+● MLalgorithmslearnpatternsandrelationshipsfrom labeledorunlabeled
+datatomakeinformeddecisionsorpredictions.
+● TechniquesinMLincludesupervisedlearning,unsupervisedlearning,
+reinforcementlearning,andsemi-supervisedlearning.
+ GenerativeAI:
+● GenerativeAIisaspecializedfieldwithinMLfocusedoncreatingnew
+datasamplesthatresembleagivendataset.
+● UnlikediscriminativemodelsinML,generativemodelslearntheunderlying
+distributionofthedataandgeneratenewinstancesfrom it.
+● GenerativeAIfindsapplicationsinimagesynthesis,textgeneration,music
+composition,andmore.
+ NaturalLanguageProcessing(NLP):
+● NLPisasubfield ofAIandMLconcernedwiththeinteractionbetween
+computersandhumanlanguages.
+● Itinvolvestaskssuchastextunderstanding,sentimentanalysis,language
+translation,andspeechrecognition.
+● NLPtechniquesincludetokenization,part-of-speechtagging,namedentity
+recognition,andlanguagemodeling.
+ DeepLearning(DL):
+● DLisasubsetofMLthatutilizesartificialneuralnetworkswithmultiple
+layers(deepneuralnetworks)tomodelandsolvecomplexproblems.
+● DLexcelsintaskssuchasimagerecognition,speechrecognition,natural
+languageprocessing,andreinforcementlearning.
+----------------Page (0) Break----------------
+SFJBS
+● Deeplearningmodelslearnhierarchicalrepresentationsofdata,
+automaticallyextractingfeaturesfrom rawinput.
+Inessence,AIisthebroaderfieldencompassingthequesttocreateintelligent
+machines,MLisasubsetfocusedonalgorithmsthatlearnfrom data,GenerativeAI
+specializesincreatingnewdatasamples,NLPdealsspecifically withhumanlanguage
+understandingandprocessing,andDLisasubsetofMLusingdeepneuralnetworksfor
+learninghierarchicalrepresentationsofdata.
+======================================================================
+SupervisedLearning:Algorithmslearnfrom labeleddata,makingpredictionsor
+classifications basedonexampleswithknownoutcomes,aimingtominimizethe
+differencebetweenpredictedandactualresults.Commonlyusedfortaskslike
+classification  andregression.
+ApplicationsofSupervisedML:
+1.Classification
+2.Regression
+3.AnomalyDetection
+4.ObjectDetection
+5.ImageRecognition
+6.NaturalLanguageProcessing(NLP)
+7.SpeechRecognition
+8.RecommendationSystems
+9.BiometricIdentification
+10.MedicalDiagnosis
+UnsupervisedLearning:Algorithmsuncoverhiddenpatternsorstructuresinunlabeled
+datawithoutexplicitguidance,oftenusedforclustering,dimensionalityreduction,and
+anomalydetection,gaininginsightsfrom data'sinherentstructure.
+ApplicationsofUnsupervisedML:
+1.Clustering
+2.DimensionalityReduction
+3.AnomalyDetection
+4.DensityEstimation
+----------------Page (1) Break----------------
+SFJBS
+5.AssociationRuleLearning
+6.FeatureLearning
+7.MarketBasketAnalysis
+8.CommunityDetectioninSocialNetworks
+9.CustomerSegmentation
+10.DataVisualizationandExploration
+Semi-SupervisedLearning:Utilizesacombinationoflabeledandunlabeleddata,
+enhancinglearningwithlimitedlabeledexamplesbyleveragingadditionalunlabeled
+data,usefulwhenobtaininglabeleddataiscostlyortime-consuming.
+ApplicationsofSemi-supervisedLearning:
+1.SpeechRecognition
+2.ImageClassification
+3.DocumentCategorization
+4.TextClassification
+5.VideoAnalysis
+6.DrugDiscovery
+7.SentimentAnalysis
+8.EntityRecognition
+9.FraudDetection
+10.CustomerSegmentation
+ReinforcementLearning:Involvestrainingagentstomakesequentialdecisionsinan
+environmenttomaximizecumulativerewards,learningthroughtrialanderror,receiving
+feedbackintheformofrewardsorpenalties,appliedindynamicenvironmentssuchas
+gameplayingandrobotics.
+ApplicationsofReinforcementLearning:
+1.GamePlaying
+2.Robotics
+3.AutonomousVehicles
+4.RecommendationSystems
+5.DynamicPricing
+6.ResourceManagement
+7.SupplyChainOptimization
+8.AdaptiveUserInterfaces
+----------------Page (2) Break----------------
+SFJBS
+9.EnergyManagement
+10.HealthcareTreatmentOptimization
+========================================================================
+MachinelearningModellifecycle:
+1.ProblemDefinition
+2.DataCollection
+3.DataPreprocessing
+4.FeatureEngineering
+5.ModelSelection
+6.ModelTraining
+7.ModelEvaluation
+8.ModelTuning
+9.ModelDeployment
+10.ModelMaintenanceandMonitoring
+========================================================================
+CategoryofMLApplications:
+Machinelearningapplicationscanbecategorizedintovarioustypesbasedonthetasks
+theyperformandthegoalstheyaimtoachieve.Herearesomecommontypesof
+machinelearningapplications:
+ Classification:
+● Classification  tasksinvolvecategorizinginputdataintopredefined classes
+orcategories.Forexample,emailspamdetection,sentimentanalysis,and
+imageclassification  areallexamplesofclassification  applications.
+ Regression:
+● Regressiontasksinvolvepredictingacontinuousvaluebasedoninput
+features.Examplesincludepredictinghousepricesbasedonfeatureslike
+location,size,andnumberofbedrooms,orpredictingstockpricesbased
+onhistoricaldata.
+ Clustering:
+● Clusteringtasksinvolvegroupingsimilardatapointstogetherbasedon
+theircharacteristicsorfeatures.Examplesincludecustomer
+----------------Page (3) Break----------------
+SFJBS
+segmentationfortargetedmarketing,groupingsimilardocumentsintext
+corpora,oridentifyingpatternsinunlabeleddata.
+ AnomalyDetection:
+● Anomalydetectiontasksinvolveidentifyingunusualpatternsoroutliersin
+datathatdeviatefrom thenorm.Examplesincludefrauddetectionin
+financialtransactions,networkintrusiondetectionincybersecurity,and
+equipmentfailurepredictioninpredictivemaintenance.
+ DimensionalityReduction:
+● Dimensionalityreductiontechniquesaimtoreducethenumberoffeatures
+inadatasetwhilepreservingitsessentialinformation.Thiscanhelpin
+visualizinghigh-dimensionaldata,speedinguptrainingalgorithms,and
+improvingmodelperformance.PrincipalComponentAnalysis(PCA)and
+t-DistributedStochasticNeighborEmbedding(t-SNE)arecommon
+dimensionalityreductiontechniques.
+ NaturalLanguageProcessing(NLP):
+● NLPtasksinvolveunderstandingandgeneratinghumanlanguage.
+Examplesincludesentimentanalysis,machinetranslation,namedentity
+recognition,textsummarization,andquestion-answeringsystems.
+ ComputerVision:
+● Computervisiontasksinvolveunderstandingandinterpretingvisualdata
+suchasimagesorvideos.Examplesincludeobjectdetection,image
+segmentation,facialrecognition,andimagecaptioning.
+ RecommenderSystems:
+● Recommendersystemsaimtoprovidepersonalizedrecommendationsto
+usersbasedontheirpreferencesandpastinteractions.Examplesinclude
+movierecommendationsystems(likethoseusedbyNetflix), e-commerce
+productrecommendationsystems(likethoseusedbyAmazon),and
+musicrecommendationsystems(likethoseusedbySpotify).
+ GenerativeModeling:
+● Generativemodelingtasksinvolvegeneratingnewdatasamplesthatare
+similartothetrainingdata.Examplesincludeimagegenerationwith
+GenerativeAdversarialNetworks(GANs),textgenerationwithrecurrent
+neuralnetworks(RNNs),andmusicgenerationwithdeeplearningmodels.
+ TransferLearning:
+● Transferlearninginvolvesleveragingknowledgefrom onetaskordomain
+toimproveperformanceonanotherrelatedtaskordomain.Thiscanbe
+particularlyusefulwhenlabeleddataisscarceorwhentrainingresources
+arelimited.
+----------------Page (4) Break----------------
+SFJBS
+Thesearejustafewexamplesofthetypesofmachinelearningapplications.Inpractice,
+manyapplicationscombinemultipletypesoftasksandtechniquestoachievetheir
+goals.
+========================================================================
+Evaluatingtheperformanceofaclassification  model:
+Evaluatingtheperformanceofaclassification  modelinvolvesassessinghowwellitcan
+correctlypredicttheclasslabelsofthetestdatacomparedtothetruelabels.Thereare
+severalevaluationmetricscommonlyusedforthispurpose.Herearesomeofthemost
+commonones:
+ Accuracy:
+● Accuracymeasurestheproportionofcorrectlypredictedinstancesoutof
+allinstancesinthetestdataset.Itiscalculatedasthenumberofcorrect
+predictionsdividedbythetotalnumberofpredictions.
+● Accuracy=(NumberofCorrectPredictions)/(TotalNumberof
+Predictions)
+ Precision:
+● Precisionmeasurestheproportionoftruepositivepredictionsoutofall
+instancespredictedaspositive.Itindicatesthemodel'sabilitytoavoid
+falsepositives.
+● Precision=(TruePositives)/(TruePositives+FalsePositives)
+ Recall(Sensitivity):
+● Recallmeasurestheproportionoftruepositivepredictionsoutofall
+actualpositiveinstancesinthetestdataset.Itindicatesthemodel'sability
+toidentifyallpositiveinstances.
+● Recall=(TruePositives)/(TruePositives+FalseNegatives)
+ F1-Score:
+● TheF1-scoreistheharmonicmeanofprecisionandrecall.Itprovidesa
+balancedmeasureofamodel'sperformancebyconsideringboth
+precisionandrecall.
+● F1-Score=2*(Precision*Recall)/(Precision+Recall)
+ ConfusionMatrix:
+● Aconfusionmatrixprovidesadetailedbreakdownofthemodel's
+predictions,showingthenumberoftruepositives,truenegatives,false
+positives,andfalsenegatives.Itisusefulforunderstandingthetypesof
+errorsmadebythemodelandidentifyingareasforimprovement.
+----------------Page (5) Break----------------
+SFJBS
+ ReceiverOperatingCharacteristic(ROC)CurveandAreaUndertheCurve(AUC):
+● ROCcurvesplotthetruepositiverate(TPR)againstthefalsepositiverate
+(FPR)atvariousthresholdsettings.TheAUCrepresentstheareaunderthe
+ROCcurveandprovidesasinglescalarvaluesummarizingtheclassifier  's
+performanceacrossallpossiblethresholds.AhigherAUCvalueindicates
+betterperformance.
+ Precision-RecallCurve:
+● Precision-recallcurvesplotprecisionagainstrecallatvariousthreshold
+settings.Theyprovideinsightintohowtheprecisionandrecalltrade-off
+changeswithdifferentclassification  thresholds.
+ Accuracy,Precision,Recall,andF1-ScoreforEachClass:
+● Formulti-classclassification  problems,it'softenusefultocalculate
+accuracy,precision,recall,andF1-scoreseparatelyforeachclassto
+understandhowwellthemodelperformsforeachclassindividually.
+Whenevaluatingaclassification  model,it'sessentialtoconsiderthespecific
+characteristicsoftheproblemandchoosetheappropriateevaluationmetrics
+accordingly.Additionally,it'softenhelpfultouseacombinationofmetricstogaina
+comprehensiveunderstandingofthemodel'sperformance.
+=====================================================================
+ConfusionMatrix:
+Aconfusionmatrixisatableusedtoevaluatetheperformanceofaclassification
+model.Itprovidesadetailedbreakdownofthemodel'spredictionscomparedtothetrue
+labelsinthetestdataset.Theconfusionmatrixisparticularlyusefulforunderstanding
+thetypesoferrorsmadebythemodelandidentifyingareasforimprovement.
+Atypicalconfusionmatrixforabinaryclassification  problemconsistsoffourvalues:
+● TruePositive(TP):Instancesthatarecorrectlypredictedaspositivebythe
+model.
+● TrueNegative(TN):Instancesthatarecorrectlypredictedasnegativebythe
+model.
+● FalsePositive(FP):Instancesthatareincorrectlypredictedaspositivebythe
+model(falsealarmorTypeIerror).
+● FalseNegative(FN):Instancesthatareincorrectlypredictedasnegativebythe
+model(misseddetectionorTypeIIerror).
+----------------Page (6) Break----------------
+SFJBS●
+● Inamulti-classclassificationproblemwithmorethantwoclasses,theconfusionmatrix
+extendstocapturetheperformanceofthemodelacrossallclasses.Eachrowofthe
+matrixcorrespondstotheactualclasslabels,whileeachcolumncorrespondstothe
+predictedclasslabels.
+● Themainbenefitsofusingaconfusionmatrixinclude:
+● ClarityinPerformanceEvaluation:Itprovidesaclearandconcisesummaryofthe
+model'sperformance,allowingstakeholderstoeasilyunderstandhowwellthemodel
+performsforeachclass.
+● IdentificationofErrors:Ithelpsidentifythetypesoferrorsmadebythemodel,suchas
+falsepositivesandfalsenegatives,whichcanbecrucialfordiagnosingmodel
+weaknessesandimprovingperformance.
+● CalculationofEvaluationMetrics:Itservesasthebasisforcalculatingvarious
+evaluationmetricssuchasaccuracy,precision,recall,andF1-score,whicharederived
+fromthevaluesintheconfusionmatrix.
+● Overall,theconfusionmatrixisavaluabletoolforassessingtheeffectivenessofa
+classificationmodelandguidingdecisionsformodelrefinementandimprovement.
+----------------Page (7) Break----------------
+SFJBS
+=======================================================================
+EvaluationmetricsforRegressionproblem statement:
+1.MeanAbsoluteError(MAE)
+2.MeanSquaredError(MSE)
+3.RootMeanSquaredError(RMSE)
+4.MeanAbsolutePercentageError(MAPE)
+5.R-squared(R^2)
+6.AdjustedR-squared
+----------------Page (8) Break----------------

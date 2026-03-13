@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP | Discovery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f59e0b;
+            --secondary: #d97706;
+            --bg: #fffbeb;
+            --text: #78350f;
+            --muted: #6b7280;
+            --card: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 0% 0%, rgba(245, 158, 11, 0.1) 0%, transparent 40%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .badge {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+
+        .content-card {
+            background: var(--card);
+            border-radius: 2rem;
+            padding: 4rem;
+            box-shadow: 0 25px 50px rgba(120, 53, 15, 0.06);
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: var(--secondary);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: #4b5563;
+        }
+
+        .box {
+            background: #fffcf0;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            margin: 2rem 0;
+            border: 2px dashed #fcd34d;
+        }
+
+        .box h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .pill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .pill {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.4rem 1.2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pop {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="animation: fadeIn 1s ease-out">
+        <a href="../dashboard.html" class="back-link">← Return to Hub</a>
+        <header>
+            <span class="badge" style="animation: slideInUp 0.6s ease-out">Human Connection</span>
+            <h1 style="animation: slideInUp 0.6s ease-out 0.1s backwards">Natural Language Processing</h1>
+            <p style="font-size: 1.3rem; color: var(--muted); animation: slideInUp 0.6s ease-out 0.2s backwards">The art
+                of interpreting, transforming, and generating the
+                complex web of human language.</p>
+        </header>
+
+        <section class="content-card" style="animation: slideInUp 0.8s 0.3s backwards">
+            <p style="animation: fadeIn 0.8s 0.4s backwards">NLP is a subfield of AI focused on enabling computers to
+                understand human language in a way that is
+                meaningful and useful across varied contexts.</p>
+
+            <div class="box" style="animation: slideInUp 0.6s 0.5s backwards">
+                <h3>The Dual Mission</h3>
+                <p><strong>NLU (Understanding):</strong> Decoding intent, sentiment, and entities from raw text inputs.
+                </p>
+                <p><strong>NLG (Generation):</strong> Manufacturing coherent, contextually appropriate human language
+                    outputs.</p>
+            </div>
+
+            <h2 style="animation: slideInUp 0.6s 0.6s backwards">The Preprocessing Pipeline</h2>
+            <p style="animation: fadeIn 0.8s 0.7s backwards">Before an AI can "read," text must be meticulously cleaned
+                and structured:</p>
+            <div class="pill-container">
+                <span class="pill" style="animation-delay: 0.8s">Tokenization</span>
+                <span class="pill" style="animation-delay: 0.9s">Lowercasing</span>
+                <span class="pill" style="animation-delay: 1.0s">Lemmatization</span>
+                <span class="pill" style="animation-delay: 1.1s">Stopword Removal</span>
+                <span class="pill" style="animation-delay: 1.2s">Vectorization</span>
+                <span class="pill" style="animation-delay: 1.3s">Spell Correction</span>
+            </div>
+
+            <h2 style="animation: slideInUp 0.6s 1s backwards">Sentiment Analysis</h2>
+            <p style="animation: fadeIn 0.8s 1.1s backwards">One of the most powerful NLP tasks is determining the
+                emotion—positive, negative, or neutral—expressed in
+                text data. This is critical for customer service, market research, and social media monitoring.</p>
+
+            <h2 style="animation: slideInUp 0.6s 1.2s backwards">Dialogue Systems</h2>
+            <p style="animation: fadeIn 0.8s 1.3s backwards">Modern chatbots and virtual assistants use complex NLP to
+                manage multi-turn conversations, ensuring each
+                response is not just correct, but helpful and natural.</p>
+        </section>
+    </div>
+
+    <div id="canvas-container"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.4;">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Orbiting spheres representing word clusters
+        const orbitGroup = new THREE.Group();
+        for (let i = 0; i < 20; i++) {
+            const geo = new THREE.SphereGeometry(Math.random() * 0.2 + 0.05, 12, 12);
+            const mat = new THREE.MeshBasicMaterial({ color: 0xf59e0b, transparent: true, opacity: 0.6 });
+            const sphere = new THREE.Mesh(geo, mat);
+            const angle = (i / 20) * Math.PI * 2;
+            const dist = 3 + Math.random();
+            sphere.position.set(Math.cos(angle) * dist, (Math.random() - 0.5) * 4, Math.sin(angle) * dist);
+            orbitGroup.add(sphere);
+        }
+        scene.add(orbitGroup);
+        camera.position.z = 7;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            orbitGroup.rotation.y += 0.005;
+            orbitGroup.rotation.x += 0.002;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+
+</html>
