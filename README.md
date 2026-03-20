@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Styling-CSS3-F59E0B?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/Graphics-Three.js-6D28D9?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" />
   <a href="https://intelligence-explorer.vercel.app/">
-    <img src="https://img.shields.io/badge/Live%20Demo-intelligence--explorer.vercel.app-6366F1?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
+    <img src="https://img.shields.io/badge/Live%20Demo-intelligence--explorer-6366F1?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
 </p>
 
 ---
